@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { motion } from 'framer-motion'
+import { motion, AnimatePresence } from 'framer-motion'
 import { HelpCircle, MessageCircle, Mail, Book, Search, ChevronDown, ArrowLeft, Send } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
@@ -200,25 +200,42 @@ const Support = () => {
                 >
                   <span className="text-white font-medium pr-4">{faq.question}</span>
                   <ChevronDown
-                    className={`text-pornyami-orange flex-shrink-0 transition-transform ${
+                    className={`text-pornyami-orange flex-shrink-0 transition-transform duration-300 ${
                       openFaq === index ? 'rotate-180' : ''
                     }`}
                     size={20}
                   />
                 </button>
-                {openFaq === index && (
-                  <motion.div
-                    initial={{ height: 0, opacity: 0 }}
-                    animate={{ height: 'auto', opacity: 1 }}
-                    exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
-                    className="px-6 pb-4"
-                  >
-                    <div className="pt-2 border-t border-white/10">
-                      <p className="text-gray-400 leading-relaxed">{faq.answer}</p>
-                    </div>
-                  </motion.div>
-                )}
+                <AnimatePresence initial={false}>
+                  {openFaq === index && (
+                    <motion.div
+                      initial={{ height: 0, opacity: 0 }}
+                      animate={{ 
+                        height: 'auto', 
+                        opacity: 1,
+                        transition: {
+                          height: { duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] },
+                          opacity: { duration: 0.25, delay: 0.1 }
+                        }
+                      }}
+                      exit={{ 
+                        height: 0, 
+                        opacity: 0,
+                        transition: {
+                          height: { duration: 0.3, ease: [0.04, 0.62, 0.23, 0.98] },
+                          opacity: { duration: 0.2 }
+                        }
+                      }}
+                      className="overflow-hidden"
+                    >
+                      <div className="px-6 pb-4">
+                        <div className="pt-2 border-t border-white/10">
+                          <p className="text-gray-400 leading-relaxed">{faq.answer}</p>
+                        </div>
+                      </div>
+                    </motion.div>
+                  )}
+                </AnimatePresence>
               </motion.div>
             ))}
           </div>
@@ -272,13 +289,13 @@ const Support = () => {
                 <label className="block text-sm font-medium text-gray-300 mb-2">
                   Subject
                 </label>
-                <select className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-pornyami-orange/50 transition-colors">
-                  <option value="">Select a subject</option>
-                  <option value="technical">Technical Support</option>
-                  <option value="billing">Billing</option>
-                  <option value="api">API Issue</option>
-                  <option value="feature">Feature Request</option>
-                  <option value="other">Other</option>
+                <select className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-xl text-white focus:outline-none focus:border-pornyami-orange/50 transition-colors" style={{ colorScheme: 'dark' }}>
+                  <option value="" style={{ backgroundColor: '#020420', color: '#ffffff' }}>Select a subject</option>
+                  <option value="technical" style={{ backgroundColor: '#020420', color: '#ffffff' }}>Technical Support</option>
+                  <option value="billing" style={{ backgroundColor: '#020420', color: '#ffffff' }}>Billing</option>
+                  <option value="api" style={{ backgroundColor: '#020420', color: '#ffffff' }}>API Issue</option>
+                  <option value="feature" style={{ backgroundColor: '#020420', color: '#ffffff' }}>Feature Request</option>
+                  <option value="other" style={{ backgroundColor: '#020420', color: '#ffffff' }}>Other</option>
                 </select>
               </div>
 
@@ -295,7 +312,7 @@ const Support = () => {
 
               <button
                 type="submit"
-                className="w-full px-8 py-4 bg-gradient-orange text-white font-semibold rounded-xl hover:shadow-glow-orange transition-all flex items-center justify-center gap-2"
+                className="w-full px-8 py-4 bg-gradient-to-r from-orange-600 to-orange-500 hover:from-orange-500 hover:to-orange-400 text-white font-semibold rounded-xl shadow-lg hover:shadow-orange-500/50 transition-all duration-300 flex items-center justify-center gap-2"
               >
                 <Send size={18} />
                 Send Message

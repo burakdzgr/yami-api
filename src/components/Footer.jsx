@@ -5,6 +5,10 @@ import { Github, Twitter, Mail, Heart } from 'lucide-react'
 const Footer = () => {
   const currentYear = new Date().getFullYear()
 
+  const handleInternalLinkClick = () => {
+    window.scrollTo(0, 0)
+  }
+
   const footerLinks = {
     product: [
       { name: 'API Documentation', href: '/#documentation', internal: false },
@@ -62,6 +66,7 @@ const Footer = () => {
                   {link.internal ? (
                     <Link
                       to={link.href}
+                      onClick={handleInternalLinkClick}
                       className="text-gray-400 hover:text-white transition-colors text-sm inline-block"
                     >
                       {link.name}
@@ -88,6 +93,7 @@ const Footer = () => {
                   {link.internal ? (
                     <Link
                       to={link.href}
+                      onClick={handleInternalLinkClick}
                       className="text-gray-400 hover:text-white transition-colors text-sm inline-block"
                     >
                       {link.name}
@@ -114,6 +120,7 @@ const Footer = () => {
                   {link.internal ? (
                     <Link
                       to={link.href}
+                      onClick={handleInternalLinkClick}
                       className="text-gray-400 hover:text-white transition-colors text-sm inline-block"
                     >
                       {link.name}

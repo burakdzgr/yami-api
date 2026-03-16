@@ -167,10 +167,11 @@ const APIShowcase = () => {
                     value={selectedCategory}
                     onChange={(e) => setSelectedCategory(e.target.value)}
                     className="w-full bg-white/5 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-pornyami-orange/50 transition-colors"
+                    style={{ colorScheme: 'dark' }}
                   >
-                    <option value="">All Categories</option>
+                    <option value="" style={{ backgroundColor: '#020420', color: '#ffffff' }}>All Categories</option>
                     {categories.map((cat) => (
-                      <option key={cat.name} value={cat.name}>{cat.name}</option>
+                      <option key={cat.name} value={cat.name} style={{ backgroundColor: '#020420', color: '#ffffff' }}>{cat.name}</option>
                     ))}
                   </select>
                 </div>
@@ -183,10 +184,11 @@ const APIShowcase = () => {
                     value={selectedStar}
                     onChange={(e) => setSelectedStar(e.target.value)}
                     className="w-full bg-white/5 border border-white/10 text-white px-4 py-3 rounded-xl focus:outline-none focus:border-pornyami-orange/50 transition-colors"
+                    style={{ colorScheme: 'dark' }}
                   >
-                    <option value="">All Pornstars</option>
+                    <option value="" style={{ backgroundColor: '#020420', color: '#ffffff' }}>All Pornstars</option>
                     {pornstars.map((star) => (
-                      <option key={star.name} value={star.name}>{star.name}</option>
+                      <option key={star.name} value={star.name} style={{ backgroundColor: '#020420', color: '#ffffff' }}>{star.name}</option>
                     ))}
                   </select>
                 </div>
