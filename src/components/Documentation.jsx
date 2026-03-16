@@ -74,7 +74,7 @@ axios.request(options)
             <span className="text-gradient-orange">Reference</span>
           </h2>
           <p className="text-lg text-gray-400 max-w-2xl mx-auto">
-            Everything you need to integrate PornYami into your application.
+            Everything you need to integrate PornAPI into your application.
           </p>
         </motion.div>
 

@@ -6,6 +6,7 @@ import APIShowcase from './components/APIShowcase'
 import Documentation from './components/Documentation'
 import Pricing from './components/Pricing'
 import Footer from './components/Footer'
+import DomainStatus from './components/DomainStatus'
 import PrivacyPolicy from './pages/PrivacyPolicy'
 import Terms from './pages/Terms'
 import DMCA from './pages/DMCA'
@@ -16,6 +17,7 @@ function HomePage() {
   return (
     <>
       <Hero />
+      <DomainStatus />
       <APIShowcase />
       <Documentation />
       <Pricing />

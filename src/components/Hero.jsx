@@ -51,7 +51,7 @@ const Hero = () => {
 
             {/* Sub-headline */}
             <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-xl">
-              High-performance HLS streaming, rich metadata, and effortless integration. Build your adult platform in minutes with our developer-first API.
+              High-performance HLS streaming, rich metadata, and effortless integration. Build your adult platform in minutes with our developer-first API. pornapi.domains
             </p>
 
             {/* CTA Buttons */}

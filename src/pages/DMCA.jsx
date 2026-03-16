@@ -40,7 +40,7 @@ const DMCA = () => {
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              PornYami respects the rights of copyright holders and is fully compliant with the DMCA. 
+              PornAPI respects the rights of copyright holders and is fully compliant with the DMCA. 
               We take copyright infringement claims seriously.
             </p>
           </motion.div>
@@ -211,8 +211,8 @@ const DMCA = () => {
                 <div className="space-y-3">
                   <div>
                     <p className="text-sm text-gray-400 mb-1">Email:</p>
-                    <a href="mailto:dmca@pornyami.com" className="text-pornyami-orange hover:underline font-medium text-lg">
-                      dmca@pornyami.com
+                    <a href="mailto:dmca@pornapi.domains" className="text-pornyami-orange hover:underline font-medium text-lg">
+                      dmca@pornapi.domains
                     </a>
                   </div>
                   <div>

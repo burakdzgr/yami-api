@@ -84,7 +84,7 @@ const PrivacyPolicy = () => {
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              At PornYami, we value your privacy. This policy explains how we collect, use, and 
+              At PornAPI, we value your privacy. This policy explains how we collect, use, and 
               protect your personal information when you use our API services.
             </p>
           </motion.div>
@@ -175,8 +175,8 @@ const PrivacyPolicy = () => {
               </p>
               <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                 <p className="text-white font-medium mb-2">Email:</p>
-                <a href="mailto:privacy@pornyami.com" className="text-pornyami-orange hover:underline">
-                  privacy@pornyami.com
+                <a href="mailto:privacy@pornapi.domains" className="text-pornyami-orange hover:underline">
+                  privacy@pornapi.domains
                 </a>
               </div>
             </div>

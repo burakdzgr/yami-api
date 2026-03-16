@@ -54,9 +54,9 @@ const Support = () => {
     {
       icon: Mail,
       title: 'Email Support',
-      description: 'Send your technical questions to support@pornyami.com.',
+      description: 'Send your technical questions to support@pornapi.domains.',
       action: 'Send Email',
-      link: 'mailto:support@pornyami.com',
+      link: 'mailto:support@pornapi.domains',
       badge: '24-48 hours'
     },
     {

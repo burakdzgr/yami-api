@@ -40,7 +40,7 @@ const Header = () => {
             <a href="#" className="flex items-center space-x-2 group">
               <div className="text-2xl font-bold tracking-tight">
                 <span className="text-white">Porn</span>
-                <span className="text-gradient-orange">Yami</span>
+                <span className="text-gradient-orange">API</span>
               </div>
             </a>
             {/* Status Indicator */}

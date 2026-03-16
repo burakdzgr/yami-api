@@ -9,7 +9,7 @@ const Terms = () => {
       icon: FileText,
       title: 'Terms of Service',
       content: [
-        'By using the PornYami API, you agree to these terms and conditions.',
+        'By using the PornAPI API, you agree to these terms and conditions.',
         'You are responsible for keeping your API key secure.',
         'You must use our services only for lawful purposes.',
         'Misuse of the API may result in account suspension.'
@@ -42,7 +42,7 @@ const Terms = () => {
         'Accounts violating terms may be suspended without warning.',
         'Repeated violations lead to permanent ban.',
         'No refunds for suspended accounts.',
-        'Appeal to support@pornyami.com for disputes.'
+        'Appeal to support@pornapi.domains for disputes.'
       ]
     }
   ]
@@ -83,7 +83,7 @@ const Terms = () => {
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              By using PornYami API services, you agree to the following terms and conditions. 
+              By using PornAPI API services, you agree to the following terms and conditions. 
               Please read these terms carefully.
             </p>
           </motion.div>
@@ -131,7 +131,7 @@ const Terms = () => {
             <h2 className="text-2xl font-bold text-white mb-6">Intellectual Property</h2>
             <div className="space-y-4 text-gray-400">
               <p>
-                The PornYami API and all related content are protected by copyright. 
+                The PornAPI API and all related content are protected by copyright. 
                 Content accessed through the API is owned by respective copyright holders.
               </p>
               <p>
@@ -150,7 +150,7 @@ const Terms = () => {
             <h2 className="text-2xl font-bold text-white mb-6">Disclaimer of Warranties</h2>
             <div className="space-y-4 text-gray-400">
               <p>
-                The PornYami API is provided "as is". We do not guarantee that the service will be uninterrupted or error-free.
+                The PornAPI API is provided "as is". We do not guarantee that the service will be uninterrupted or error-free.
               </p>
               <p>
                 We are not liable for any direct or indirect damages arising from API usage.
@@ -194,8 +194,8 @@ const Terms = () => {
               </p>
               <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                 <p className="text-white font-medium mb-2">Email:</p>
-                <a href="mailto:legal@pornyami.com" className="text-pornyami-orange hover:underline">
-                  legal@pornyami.com
+                <a href="mailto:legal@pornapi.domains" className="text-pornyami-orange hover:underline">
+                  legal@pornapi.domains
                 </a>
               </div>
             </div>

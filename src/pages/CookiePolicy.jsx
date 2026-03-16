@@ -79,7 +79,7 @@ const CookiePolicy = () => {
             </p>
 
             <p className="text-gray-400 leading-relaxed">
-              PornYami uses cookies on our website to improve user experience. 
+              PornAPI uses cookies on our website to improve user experience. 
               This policy explains which cookies we use and how you can manage them.
             </p>
           </motion.div>
@@ -242,8 +242,8 @@ const CookiePolicy = () => {
               </p>
               <div className="p-4 rounded-xl bg-white/5 border border-white/10">
                 <p className="text-white font-medium mb-2">Email:</p>
-                <a href="mailto:privacy@pornyami.com" className="text-pornyami-orange hover:underline">
-                  privacy@pornyami.com
+                <a href="mailto:privacy@pornapi.domains" className="text-pornyami-orange hover:underline">
+                  privacy@pornapi.domains
                 </a>
               </div>
               <p className="text-sm">

@@ -35,10 +35,10 @@ const Footer = () => {
           <div className="col-span-1">
             <div className="text-2xl font-bold mb-4 tracking-tight">
               <span className="text-white">Porn</span>
-              <span className="text-gradient-orange">Yami</span>
+              <span className="text-gradient-orange">API</span>
             </div>
             <p className="text-gray-400 text-sm mb-6 leading-relaxed">
-              Global Adult Media Archive API. High-performance streaming and rich metadata for developers.
+              Global Adult Media Archive API. High-performance streaming and rich metadata for developers. pornapi.domains
             </p>
             <div className="flex items-center gap-3">
               <a href="#" className="p-2 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 hover:border-pornyami-orange/50 text-gray-400 hover:text-pornyami-orange transition-all">
@@ -136,7 +136,7 @@ const Footer = () => {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <p className="text-gray-500 text-sm">
-              © {currentYear} PornYami. All rights reserved.
+              © {currentYear} PornAPI. All rights reserved.
             </p>
             <div className="flex items-center gap-6 text-sm">
               <p className="text-gray-500 flex items-center gap-1.5">
